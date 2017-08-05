@@ -1,0 +1,24 @@
+# - name: leonids
+#   descr: "Bacon ipsum dolor sit amet doner meatball jowl short ribs, chicken prosciutto salami frankfurter. Pig drumstick turducken short ribs, brisket meatloaf ham hock shankle andouille corned beef strip steak. Venison ham bresaola strip steak. Pork belly ribeye prosciutto t-bone."
+#   image: pong.png
+#   github: https://github.com/renyuanz/leonids
+
+- name: Pugfolio
+  descr: "Create Your Portfolio using Pug Template Engine."
+  github: https://github.com/Astro36/Pugfolio
+
+- name: WordChainerJS
+  descr: "Korean Word Chainer Bot"
+  github: https://github.com/Astro36/WordChainerJS
+
+- name: Materialize-Template-2
+  descr: "Materialize Template for JSDoc 3"
+  github: https://github.com/Astro36/Materialize-Template-2
+
+- name: Deneb
+  descr: "Integrated User Management System"
+  github: https://github.com/CosmosA/Deneb
+
+- name: Metis
+  descr: "Android Wallpaper Stealer App"
+  github: https://github.com/CosmosA/Metis
