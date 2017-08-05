@@ -6,7 +6,7 @@
 title: Astro36
 email: astr36@naver.com
 description: My Blog
-url: "http://astro36.me/" # the base hostname & protocol for your site
+url: "http://astro36.me" # the base hostname & protocol for your site
 
 
 #
@@ -38,7 +38,7 @@ owner:
   job: "High School Student"
   bio: "Hello World!"
   email: astr36@naver.com
-  disqus-shortname: astro36
+  disqus-shortname:
   twitter: sj_astro #username
   facebook: #username
   google:
