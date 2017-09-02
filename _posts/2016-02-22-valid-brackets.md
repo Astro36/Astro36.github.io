@@ -6,8 +6,6 @@ tags: ['javascript']
 ccl: by-nc-nd
 ---
 
-# 문자열에서 괄호의 유효성을 검사하자
-
 ```javascript
 /**
  * Check the validity of the brackets.

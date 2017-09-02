@@ -6,8 +6,6 @@ tags: ['javascript']
 ccl: by-nc-nd
 ---
 
-# 문자열인 버전을 비교하자
-
 ```javascript
 /**
  * Compare the version of A and B.

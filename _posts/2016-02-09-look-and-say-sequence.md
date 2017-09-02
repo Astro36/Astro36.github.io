@@ -6,8 +6,6 @@ tags: ['javascript']
 ccl: by-nc-nd
 ---
 
-# 개미수열을 구해보자
-
 ```javascript
 var Algorithm = {
   Array: {}

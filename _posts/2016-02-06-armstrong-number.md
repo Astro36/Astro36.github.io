@@ -6,8 +6,6 @@ tags: ['javascript']
 ccl: by-nc-nd
 ---
 
-# 암스트롱 수를 구해보자
-
 ```javascript
 var Algorithm = {
   Math: {}

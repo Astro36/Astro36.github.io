@@ -6,8 +6,6 @@ tags: ['javascript']
 ccl: by-nc-nd
 ---
 
-# 함수와 객체의 프로퍼티를 가져오자
-
 ```javascript
 /**
  * Get properties of target object.

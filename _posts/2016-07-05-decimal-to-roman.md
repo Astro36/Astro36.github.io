@@ -6,8 +6,6 @@ tags: ['javascript']
 ccl: by-nc-nd
 ---
 
-# 로마 숫자 변환기
-
 ```javascript
 /**
  * 10진수를 로마 숫자로 변환합니다.
