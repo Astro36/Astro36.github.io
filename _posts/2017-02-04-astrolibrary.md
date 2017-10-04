@@ -5,7 +5,7 @@ date: 2017-02-04 16:25
 category: Program
 tags: ["Programming", "Android", "Rhino", "Javascript", "MinecraftPE", "BlockLauncher", "AstroLibrary"]
 image:
-  src: https://github.com/Astro36/AstroLibrary/blob/master/res/img_astro_library.png
+  src: http://astro36.me/assets/img/posts/2017-02-04/astrolibrary.png
   copyright: Astro36
 ccl: by-nc-nd
 ---
@@ -14,7 +14,7 @@ ccl: by-nc-nd
 
 [Github](https://github.com/Astro36/AstroLibrary)
 
-## 새로운 기능
+# 새로운 기능
 
 - Add ColorPicker class.
 - Add ColorPickerWindow class.
@@ -38,14 +38,14 @@ ccl: by-nc-nd
 - Remove ScriptChecker class.
 - Remove ScriptInfo class.
 
-## API 문서
+# API 문서
 
 [Doc](https://astro36.github.io/AstroLibrary/2.0/index.html)
 
-## 다운로드
+# 다운로드
 
 [Download](https://github.com/Astro36/AstroLibrary/releases/tag/2.0)
 
-## 라이선스 
+# 라이선스 
 
 LGPL-3.0

@@ -5,12 +5,12 @@ date: 2016-09-06 19:32
 category: Program
 tags: ["Programming", "Android", "Rhino", "Javascript", "MinecraftPE", "BlockLauncher", "색상 스크롤바"]
 image:
-  src: https://m.cafe.naver.com/ImageView.nhn?imageUrl=https%3A%2F%2Fmcafethumb-phinf.pstatic.net%2F20160906_294%2Fastr36_1473157715491tlLD6_PNG%2FScreenshot_2016-09-06-19-27-59.png%3Ftype%3Dw1280
+  src: http://astro36.me/assets/img/posts/2016-09-06/scrollbar.png
   copyright: Astro36
 ccl: by-nc-nd
 ---
 
-## 사용 예시
+# 사용 예시
 
 ```javascript
 const Color_ = android.graphics.Color,
@@ -43,6 +43,6 @@ function useItem() {
 }
 ```
 
-## 다운로드
+# 다운로드
 
 [Download](https://github.com/Astro36/ModPE/blob/master/ColoredScrollView.js)
