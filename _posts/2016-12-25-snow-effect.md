@@ -5,7 +5,7 @@ date: 2016-12-25 18:44
 category: Program
 tags: ["Programming", "Android", "Rhino", "Javascript", "MinecraftPE", "BlockLauncher", "SnowEffect"]
 image:
-  src: http://astro36.me/assets/img/posts/2016-12-25/snow_effect.png
+  src: http://astro36.me/assets/img/posts/2016-12-25/snow_effect.jpg
   copyright: Astro36
 ccl: by-nc-nd
 ---
