@@ -1,8 +1,8 @@
 ---
 title: "로마 숫자 변환기"
 author: Astro36
-category: algorithm
-tags: ['javascript']
+category: Algorithm
+tags: ["Programming", "Javascript"]
 ccl: by-nc-nd
 ---
 

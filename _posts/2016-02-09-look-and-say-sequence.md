@@ -1,8 +1,8 @@
 ---
 title: "개미수열을 구해보자"
 author: Astro36
-category: algorithm
-tags: ['javascript']
+category: Algorithm
+tags: ["Programming", "Javascript"]
 ccl: by-nc-nd
 ---
 

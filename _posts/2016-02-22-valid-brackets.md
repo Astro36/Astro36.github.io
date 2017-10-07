@@ -1,8 +1,8 @@
 ---
 title: "문자열에서 괄호의 유효성을 검사하자"
 author: Astro36
-category: algorithm
-tags: ['javascript']
+category: Algorithm
+tags: ["Programming", "Javascript"]
 ccl: by-nc-nd
 ---
 

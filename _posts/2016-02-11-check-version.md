@@ -1,8 +1,8 @@
 ---
 title: "문자열인 버전을 비교하자"
 author: Astro36
-category: algorithm
-tags: ['javascript']
+category: Algorithm
+tags: ["Programming", "Javascript"]
 ccl: by-nc-nd
 ---
 
