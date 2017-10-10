@@ -11,7 +11,7 @@ ccl: by-nc-nd
 
 개발 중인 ModPE 스크립트 컴파일러
 
-ES6 코드 변환, 코드 압툭 및 난독화 기능 탑재
+ES6 코드 변환, 코드 압축 및 난독화 기능 탑재
 
 - Re_NotePad.js: 381KB -> Re_NotePad.min.js: 257KB (67%, 124KB 압축)
 - Dark Cheater 2.9.2.js: 500KB -> Dark Cheater 2.9.2.min.js: 427KB (85%, 73KB 압축)
