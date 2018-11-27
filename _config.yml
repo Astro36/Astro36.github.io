@@ -1,20 +1,22 @@
-title: CosmosA
-description: Astro's Programming Blog
-url: http://astro36.me/
-keywords: ["Programming", "Blog"]
+title: Your awesome title
+description: >-
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+url: "https://astro36.github.io/"
+keywords: ["blog", "test"]
 timezone: Asia/Seoul
 permalink: pretty
 
-about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta, odio vitae sodales malesuada, nibh diam convallis lectus, non scelerisque arcu lectus non nisi. Etiam tincidunt libero eget urna tristique faucibus. Pellentesque varius mi at placerat lobortis. Donec nec aliquam augue. Cras in gravida urna. Nulla dignissim semper accumsan. Nullam mattis felis metus, nec accumsan lorem porta et. Ut dictum dapibus est. In eu ultricies lorem. Duis semper elementum arcu, in rutrum tellus ornare eu."
-
 author:
-  disqus: 
+  disqus:
   email: astr36@naver.com
   github: Astro36 # required
-  google_analytics: UA-77377358-3
+  google_analytics:
   name: Astro # required
   telegram: psj1026
-
+  
+markdown: kramdown
 paginate: 5
 paginate_path: "/blog/page/:num/"
 
@@ -29,5 +31,5 @@ defaults:
 kramdown:
   input: GFM
 
-sass:
-  style: compressed
+plugins:
+  - jekyll-feed

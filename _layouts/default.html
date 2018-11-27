@@ -1,25 +1,52 @@
-<!DOCTYPE html>
-
 {% capture url %}{{ site.url | append: "$" | replace: "/$", "" | replace: "$", "" }}{% endcapture %}
 
-<html lang="ko">
-<head>
-  {% include meta.html %}
-  {% include css.html %}
+{% if page.title %}
+{% capture title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+{% else %}
+{% capture title %}{{ site.title }}{% endcapture %}
+{% endif %}
+
+<!DOCTYPE html>
+<html>
+
+<head lang="ko">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Seungjae Park">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords" content="{{ site.keywords | array_to_sentence_string }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#673ab7">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-navbutton-color" content="#795548">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+
+    <meta property="og:type" content="blog">
+    <meta property="og:url" content="{{ url }}">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ site.description }}">
+
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.24/css/uikit.min.css">
+    <link type="text/css" rel="stylesheet" href="http://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css">
+    <title>{{ title }}</title>
 </head>
 
 <body>
-  <header>
-    {% include nav.html %}
-  </header>
-  <main>
-    <section>
-      {{ content }}
-    </section>
-  </main>
-  <footer class="page-footer">
-    {% include footer.html %}
-  </footer>
-  {% include js.html %}
+    <header>
+        {% include header.html %}
+    </header>
+    <main>
+        {{ content }}
+    </main>
+    <footer class="page-footer">
+    </footer>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.24/js/uikit.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.24/js/uikit-icons.min.js"></script>
 </body>
+
 </html>
