@@ -15,21 +15,24 @@ author:
   google_analytics:
   name: Astro # required
   telegram: psj1026
-  
-markdown: kramdown
-paginate: 5
-paginate_path: "/blog/page/:num/"
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: posts
     values:
       layout: post
 
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+feed:
+  path: atom.xml
+
 kramdown:
   input: GFM
 
-plugins:
-  - jekyll-feed
+paginate: 5
+paginate_path: "/blog/page/:num/"
