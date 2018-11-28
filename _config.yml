@@ -1,4 +1,4 @@
-title: Your awesome title
+title: CosmosA
 description: >-
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -6,7 +6,6 @@ description: >-
 url: "https://astro36.github.io/"
 keywords: ["blog", "test"]
 timezone: Asia/Seoul
-permalink: pretty
 
 author:
   disqus:

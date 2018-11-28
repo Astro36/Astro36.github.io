@@ -5,7 +5,7 @@ date: 2016-09-06 19:32
 category: Program
 tags: ["Programming", "Android", "Rhino", "Javascript", "MinecraftPE", "BlockLauncher", "색상 스크롤바"]
 image:
-  src: http://astro36.me/assets/img/posts/2016-09-06/scrollbar.png
+  src: http://astro36.github.io/assets/img/posts/2016-09-06/scrollbar.png
   copyright: Astro36
 ccl: by-nc-nd
 ---
