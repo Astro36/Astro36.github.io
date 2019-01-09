@@ -1,37 +1,46 @@
-title: CosmosA
-description: >-
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-url: "https://astro36.github.io/"
-keywords: ["blog", "test"]
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://Astro36.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+keywords: ["Programming", "Blog"]
 timezone: Asia/Seoul
+permalink: pretty
 
-author:
-  disqus:
-  email: astr36@naver.com
-  github: Astro36 # required
-  google_analytics:
-  name: Astro # required
-  telegram: psj1026
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-
-feed:
-  path: atom.xml
+markdown: kramdown
 
 kramdown:
   input: GFM
 
-paginate: 5
-paginate_path: "/blog/page/:num/"
+plugins:
+  # - jekyll-sitemap
+  - jekyll-feed
+
+exclude:
+  - backup/
+  - node_modules/
+  - src/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - webpack.*.js
+  - "*.config.js"
