@@ -1,0 +1,39 @@
+@import "global";
+
+body {
+  background-color: @background-color;
+}
+
+
+main {
+  margin-top: 56px;
+
+  @media @large, @xlarge {
+    margin-left: 256px;
+  }
+}
+
+hr {
+  border: none;
+  border-top: @divider-color 1px solid;
+  margin: 7px 0 8px 0;
+}
+
+.container {
+  padding: 16px;
+  margin: 0 auto;
+  max-width: 992px;
+  color: @text-color;
+
+  @media @medium {
+    width: 90%;
+  }
+
+  @media @large {
+    width: 80%;
+  }
+
+  @media @xlarge {
+    width: 70%;
+  }
+}
