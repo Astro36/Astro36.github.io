@@ -1,39 +1,41 @@
 <template>
   <header>
     <i class="material-icons" @click="open">menu</i>
-    <a class="logo" href>Title</a>
-    <my-navigation ref="nav"></my-navigation>
+    <a class="logo" :href="$url">{{ $title }}</a>
+    <TheNavigationDrawer ref="drawer"/>
   </header>
 </template>
 
 <script>
-import MyNavigation from './MyNavigation.vue';
+import TheNavigationDrawer from './TheNavigationDrawer.vue';
 
 export default {
-  name: 'MyHeader',
-  components: {'my-navigation': MyNavigation},
+  name: 'TheHeader',
+  components: {
+    TheNavigationDrawer,
+  },
   methods: {
     open() {
-      this.$refs.nav.show();
+      this.$refs.drawer.show();
     },
   },
 };
 </script>
 
 <style lang="less" scoped>
-@import "../assets/global";
+@import "../styles/global";
 
 header {
-  align-items: center;
   display: flex;
-  height: 56px;
-  background-color: @toolbar-color;
-  box-shadow: 0 2px 4px @shadow-color;
-  z-index: 5;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  height: 56px;
+  background-color: @toolbar-color;
+  align-items: center;
+  box-shadow: 0 2px 4px @shadow-color;
+  z-index: 5;
 
   .material-icons {
     padding: 0 16px;
@@ -44,6 +46,7 @@ header {
     padding: 0 16px;
     color: @toolbar-text-color;
     font-size: 20px;
+    font-weight: bold;
     line-height: 20px;
     text-decoration: none;
   }

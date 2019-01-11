@@ -1,18 +1,37 @@
-import './assets/normalize.css';
-import './assets/fonts.less';
-import './assets/main.less';
+import './styles/normalize.css';
+import './styles/card.less';
+import './styles/container.less';
+import './styles/fonts.less';
+import './styles/list.less';
+import './styles/main.less';
 
 import Vue from 'vue';
-import MyFooter from './components/MyFooter.vue';
-import MyHeader from './components/MyHeader.vue';
-import MyNavigation from './components/MyNavigation.vue';
+import TheFooter from './components/TheFooter.vue';
+import TheHeader from './components/TheHeader.vue';
+
 // import './registerServiceWorker';
+
+const globals = {
+  url: 'https://Astro36.github.io',
+  title: 'Memory Star',
+  author: {
+    name: 'Seungjae Park',
+    avatar: 'https://github.com/Astro36.png',
+    email: 'astr36@naver.com',
+    github: 'https://github.com/Astro36',
+  },
+};
+
+Object.assign(Vue.prototype, Object.entries(globals)
+  .reduce((accumulator, [key, value]) => {
+    accumulator[`$${key}`] = value;
+    return accumulator;
+  }, {}));
 
 Vue.config.productionTip = process.env.NODE_ENV !== 'production';
 
-Vue.component('my-footer', MyFooter);
-Vue.component('my-header', MyHeader);
-Vue.component('my-navigation', MyNavigation);
+Vue.component('the-footer', TheFooter);
+Vue.component('the-header', TheHeader);
 
 /* eslint-disable no-new */
 new Vue({

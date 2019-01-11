@@ -1,0 +1,14 @@
+@import "global";
+
+.card {
+  margin: 8px;
+  color: @card-text-color;
+  background-color: @card-color;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px @shadow-color;
+  transition: box-shadow 0.25s;
+
+  .hoverable:hover {
+    box-shadow: 0 4px 8px @shadow-color;
+  }
+}

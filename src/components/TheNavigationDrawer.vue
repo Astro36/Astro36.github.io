@@ -3,9 +3,9 @@
     <transition name="slide">
       <nav v-if="largeViewport || visible">
         <header>
-          <img class="avatar">
-          <a class="name" href>Name</a>
-          <a class="email" href>email</a>
+          <img v-if="$author.avatar" class="avatar" :src="$author.avatar" alt="Author Avatar">
+          <span class="name">{{ $author.name }}</span>
+          <a class="email" href="$authorEmail">{{ $author.email }}</a>
         </header>
         <hr>
         <ul>
@@ -21,12 +21,18 @@
 
 <script>
 export default {
-  name: 'MyNavigation',
+  name: 'TheNavigationDrawer',
   data() {
     return {
       largeViewport: window.innerWidth >= 720,
       visible: false,
     };
+  },
+  created() {
+    window.addEventListener('resize', this.calculateWidth);
+  },
+  destroyed() {
+    window.removeEventListener('resize', this.calculateWidth);
   },
   methods: {
     calculateWidth() {
@@ -40,17 +46,11 @@ export default {
       this.visible = true;
     },
   },
-  created() {
-    window.addEventListener('resize', this.calculateWidth);
-  },
-  destroyed() {
-    window.removeEventListener('resize', this.calculateWidth);
-  },
 };
 </script>
 
 <style lang="less" scoped>
-@import "../assets/global";
+@import "../styles/global";
 
 nav {
   position: fixed;
@@ -66,26 +66,30 @@ nav {
     text-decoration: none;
   }
 
+  span {
+    color: @navigation-text-color;
+  }
+
   header {
     display: flex;
-    height: 160px;
+    padding: 16px;
     flex-direction: column;
     justify-content: flex-end;
 
     .avatar {
-      padding: 0 16px;
-      width: 64px;
-      height: 64px;
+      padding: 8px 0;
+      width: 80px;
+      height: 80px;
     }
 
     .name {
-      padding: 8px 16px;
+      padding: 8px 0;
       font-size: 20px;
+      font-weight: bold;
       line-height: 20px;
     }
 
     .email {
-      padding: 0 16px;
       font-size: 16px;
       line-height: 20px;
     }

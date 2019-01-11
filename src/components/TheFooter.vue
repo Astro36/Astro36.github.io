@@ -2,22 +2,24 @@
   <footer>
     <span>
       © 2019
-      <a href="https://github.com/Astro36">Seungjae Park</a>
+      <a :href="$author.github">{{ $author.name }}</a>
     </span>
     <br>
     <span>
       View on
-      <a href="https://github.com/Astro36/portfolio">GitHub</a>
+      <a href="https://github.com/Astro36/Astro36.github.io">GitHub</a>
     </span>
   </footer>
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'TheFooter',
+};
 </script>
 
 <style lang="less" scoped>
-@import "../assets/global";
+@import "../styles/global";
 
 footer {
   display: flex;
@@ -27,8 +29,8 @@ footer {
   justify-content: space-between;
 
   a {
-    font-weight: bold;
     color: @footer-text-color;
+    font-weight: bold;
     text-decoration: none;
   }
 
