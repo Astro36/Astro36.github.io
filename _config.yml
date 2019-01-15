@@ -15,9 +15,6 @@ notice:
   title: 공지사항 없음
   url: https://Astro36.github.io
 
-kramdown:
-  input: GFM
-
 plugins:
   # - jekyll-sitemap
   - jekyll-feed

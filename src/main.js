@@ -3,8 +3,10 @@ import './styles/card.less';
 import './styles/container.less';
 import './styles/fonts.less';
 import './styles/footer.less';
+import './styles/highlighter.less';
 import './styles/list.less';
 import './styles/main.less';
+import './styles/markdown.less';
 
 import Vue from 'vue';
 import TheHeader from './components/TheHeader.vue';
