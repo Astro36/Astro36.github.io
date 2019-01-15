@@ -1,0 +1,19 @@
+@import "global";
+
+footer {
+  display: flex;
+  padding: 32px;
+  background-color: @footer-color;
+  color: @footer-text-color;
+  justify-content: space-between;
+
+  a {
+    color: @footer-text-color;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  @media @large, @xlarge {
+    margin-left: 256px;
+  }
+}

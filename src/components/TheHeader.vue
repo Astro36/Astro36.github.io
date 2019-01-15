@@ -53,6 +53,8 @@ header {
 
   @media @large, @xlarge {
     left: 256px;
+    height: 64px;
+    justify-content: center;
 
     .material-icons {
       display: none;

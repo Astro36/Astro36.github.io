@@ -1,19 +1,21 @@
+{% capture url %}{{ site.url | append: "$" | replace: "/$", "" | replace: "$", "" }}{% endcapture %}
+
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="application-name" content="Memory Star">
+  <meta name="application-name" content="{{ site.title }}">
   <meta name="author" content="Seungjae Park">
-  <meta name="description" content="Seungjae Park’s Blog">
-  <meta name="keywords" content="">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="keywords" content="{{ site.keywords | array_to_sentence_string }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Theme Color -->
-  <meta name="theme-color" content="#1a237e">
+  <meta name="theme-color" content="#3f51b5">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="msapplication-navbutton-color" content="#1a237e">
+  <meta name="msapplication-navbutton-color" content="#3f51b5">
 
   <!-- Fullscreen -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -45,7 +47,7 @@
   <meta name="twitter:image" content="./images/touch/icon512.png"> -->
 
   <!-- <link rel="manifest" href="./manifest.webmanifest"> -->
-  <title>Memory Star</title>
+  <title>{{ site.title }}</title>
 </head>
 
 <body>
@@ -55,9 +57,9 @@
   <div id="app">
     <the-header></the-header>
     <main>{{ content }}</main>
-    <the-footer></the-footer>
+    {% include footer.html %}
   </div>
-  <script src="../dist/bundle.js"></script>
+  <script src="{{ url }}/dist/bundle.js"></script>
 </body>
 
 </html>

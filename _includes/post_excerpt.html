@@ -1,0 +1,11 @@
+<article class="post-excerpt">
+  {% if post.image.path %}
+  <img class="photo" src="{{ post.image.path }}" alt="{{ post.image.meta }}">
+  {% endif %}
+  <h1 class="title">{{ post.title }}</h1>
+  <time class="meta" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
+  <p class="content">{{ post.content | strip_html | truncate: 240, "…" }}</p>
+  <div class="actions">
+    <a href="{{ url }}{{ post.url }}">READ MORE</a>
+  </div>
+</article>

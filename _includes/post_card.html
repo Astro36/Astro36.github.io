@@ -1,0 +1,12 @@
+<article class="card hoverable post-card">
+  <h1 class="title">{{ include.post.title }}</h1>
+  <time class="meta" datetime="{{ post.date }}">{{ include.post.date | date_to_string }}</time>
+  <p class="content">{{ include.post.content | strip_html | truncate: 100, "…" }}</p>
+  <div class="actions-wrapper">
+    <div class="actions">
+      <a href="{{ url }}{{ post.url }}">
+        <i class="material-icons">call_made</i>
+      </a>
+    </div>
+  </div>
+</article>

@@ -4,44 +4,19 @@ title: Home
 permalink: /
 ---
 
-{% capture url %}{{ site.url | append: "$" | replace: "/$", "" | replace: "$", "" }}{% endcapture %}
-
-<section class="container">
-  <article>
-    <h1>Photos</h1>
-    <div class="photo-list">
-      {% for post in site.posts %}
-      {% if post.image.path %}
-      <div class="photo-item">
-        <img class="photo" src="{{ post.image.path }}" alt="{{ post.image.meta }}">
-        <h2 class="title">{{ post.title }}</h2>
-        <time class="meta" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
-        <p class="content">{{ post.content | strip_html | truncate: 240, "…" }}</p>
-        <div class="actions">
-          <a href="{{ url }}{{ post.url }}">READ MORE</a>
-        </div>
-      </div>
-      {% endif %}
-      {% endfor %}
-    </div>
-  </article>
-  <article>
-    <h1>Posts</h1>
-    <div class="excerpt-list">
-      {% for post in site.posts %}
-      <div class="card hoverable excerpt-item">
-        <h2 class="title">{{ post.title }}</h2>
-        <time class="meta" datetime="{{ post.date }}">{{ post.date | date_to_string }}</time>
-        <p class="content">{{ post.content | strip_html | truncate: 120, "…" }}</p>
-        <div class="actions-wrapper">
-          <div class="actions">
-            <a href="{{ url }}{{ post.url }}">
-              <i class="material-icons">call_made</i>
-            </a>
-          </div>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </article>
+<section class="hero-container">
+  <hgroup class="hero">
+    <h1>A</h1>
+    <h2>{{ site.description }}</h2>
+  </hgroup>
 </section>
+
+<div class="notice-container">
+  <section class="container">
+    <a href="{{ site.notice.url }}">{{ site.notice.title }}</a>
+  </section>
+</div>
+
+<div class="container">
+  {% include post_excerpts.html %}
+</div>

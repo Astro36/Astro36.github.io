@@ -1,0 +1,8 @@
+<section class="post-cards">
+  {% if page.next %}
+  {% include post_card.html post=page.next %}
+  {% endif %}
+  {% if page.previous %}
+  {% include post_card.html post=page.previous %}
+  {% endif %}
+</section>

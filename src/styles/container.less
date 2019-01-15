@@ -18,3 +18,62 @@
     width: 70%;
   }
 }
+
+.hero-container {
+  background-color: @hero-color;
+
+  .hero {
+    padding: 120px 0;
+    color: @hero-text-color;
+    text-align: center;
+
+    h1 {
+      margin: 16px 0;
+      line-height: 80px;
+      font-size: 80px;
+      font-weight: normal;
+      text-decoration: underline;
+    }
+
+    h2 {
+      margin: 16px 0;
+      line-height: 24px;
+      font-size: 24px;
+      font-weight: normal;
+    }
+  }
+}
+
+.notice-container {
+  background-color: @notice-color;
+  border-bottom: @divider-color 1px solid;
+
+  a {
+    color: @notice-text-color;
+    font-size: 16px;
+    text-decoration: none;
+  }
+}
+
+.ribbon-container {
+  background-color: @ribbon-color;
+  height: 256px;
+}
+
+[for="ribbon-container"] {
+  margin-top: -240px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.no-tb-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.no-lr-padding {
+  padding-left: 0;
+  padding-right: 0;
+}

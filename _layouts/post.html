@@ -1,7 +1,20 @@
 ---
 layout: default
 ---
+<section class="ribbon-container"></section>
 
-<div class="card">
-  {{ content }}
+<section class="container" for="ribbon-container">
+  <article class="card post-card">
+    <h1 class="title">{{ page.title }}</h1>
+    <time class="meta" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+    <p class="content">{{ content }}</p>
+  </article>
+</section>
+
+<div class="container no-tb-padding">
+  {% include comment_card.html %}
+</div>
+
+<div class="container">
+  {% include post_cards.html %}
 </div>

@@ -2,11 +2,11 @@ import './styles/normalize.css';
 import './styles/card.less';
 import './styles/container.less';
 import './styles/fonts.less';
+import './styles/footer.less';
 import './styles/list.less';
 import './styles/main.less';
 
 import Vue from 'vue';
-import TheFooter from './components/TheFooter.vue';
 import TheHeader from './components/TheHeader.vue';
 
 // import './registerServiceWorker';
@@ -30,7 +30,6 @@ Object.assign(Vue.prototype, Object.entries(globals)
 
 Vue.config.productionTip = process.env.NODE_ENV !== 'production';
 
-Vue.component('the-footer', TheFooter);
 Vue.component('the-header', TheHeader);
 
 /* eslint-disable no-new */
