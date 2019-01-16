@@ -1,5 +1,4 @@
 ---
-layout: post
 title: The Unlicense 라이선스 정리
 category: Summary
 ---
@@ -56,6 +55,6 @@ package.json:
 # Reference
 
 - [Unlicense.org](http://unlicense.org/)
-- [The Unlicense | Choose a License](https://choosealicense.com/licenses/unlicense/)
+- [Choose a License](https://choosealicense.com/licenses/unlicense/)
 - [라이선스 의무사항 용어(보증의 부인, 책임의 제한) 문의](https://www.oss.kr/oss_license_qna/show/6b39feca-f30b-4e82-9f3c-12e55ae470c3)
 - [npm-package.json](https://docs.npmjs.com/files/package.json)

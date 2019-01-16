@@ -15,6 +15,13 @@ notice:
   title: 공지사항 없음
   url: https://Astro36.github.io
 
+defaults:
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: post
+
 plugins:
   # - jekyll-sitemap
   - jekyll-feed

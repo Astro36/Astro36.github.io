@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Node.js에서 FFI로 Rust를 이용해보자
 category: Tutorial
 ---

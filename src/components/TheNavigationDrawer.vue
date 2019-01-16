@@ -5,7 +5,7 @@
         <header>
           <img v-if="$author.avatar" class="avatar" :src="$author.avatar" alt="Author Avatar">
           <span class="name">{{ $author.name }}</span>
-          <a class="email" href="$authorEmail">{{ $author.email }}</a>
+          <a class="email" :href="$author.email">{{ $author.email }}</a>
         </header>
         <hr>
         <ul>
