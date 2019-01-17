@@ -1,6 +1,9 @@
 ---
 title: KR Binance SAFU pre-Hackathon Innovation League 후기
 category: Postscript
+image:
+  path: https://astro36.github.io/assets/2019-01-17/axiomz.jpg
+  meta: KR Binance SAFU pre-Hackathon Poster
 ---
 
 # 1일차
