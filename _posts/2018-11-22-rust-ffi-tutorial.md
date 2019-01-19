@@ -1,6 +1,7 @@
 ---
 title: Node.js에서 FFI로 Rust를 이용해보자
 category: Tutorial
+tags: ["Programming", "Node.js", "Javascript", "Rust", "FFI"]
 ---
 
 # 소개

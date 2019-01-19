@@ -1,6 +1,7 @@
 ---
 title: Windows 10에서 V8 빌드 환경 세팅하기
 category: Tutorial
+tags: ["Windows 10", "V8", "Build Environment", "Visual Studio"]
 ---
 
 # Requirement

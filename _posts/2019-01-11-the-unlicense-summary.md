@@ -1,6 +1,7 @@
 ---
 title: The Unlicense 라이선스 정리
 category: Summary
+tags: ["Open Source", "License", "The Unlcense", "Unlicensed"]
 ---
 
 # 주의
