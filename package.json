@@ -1,0 +1,30 @@
+{
+  "name": "astro36",
+  "version": "2.0.0",
+  "description": "My Blog",
+  "scripts": {
+    "build": "eleventy && tailwindcss -i ./assets/css/main.css -o ./_site/assets/css/main.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Astro36/Astro36.github.io.git"
+  },
+  "keywords": [
+    "11ty",
+    "eleventy",
+    "tailwind",
+    "blog"
+  ],
+  "author": "Seungjae Park <astro.psj@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Astro36/Astro36.github.io/issues"
+  },
+  "homepage": "https://github.com/Astro36/Astro36.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.4"
+  }
+}
