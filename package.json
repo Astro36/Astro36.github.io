@@ -3,7 +3,8 @@
   "version": "2.0.0",
   "description": "My Blog",
   "scripts": {
-    "build": "eleventy && tailwindcss -i ./assets/css/main.css -o ./_site/assets/css/main.css --minify"
+    "build": "cross-env NODE_ENV=production eleventy",
+    "dev": "eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -23,8 +24,12 @@
   "homepage": "https://github.com/Astro36/Astro36.github.io#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-navigation": "^0.3.5",
     "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
+    "cssnano": "^7.0.3",
     "postcss": "^8.4.39",
+    "postcss-load-config": "^6.0.1",
     "tailwindcss": "^3.4.4"
   }
 }
